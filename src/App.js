@@ -10,7 +10,16 @@ function App() {
   
   return (
     <div className="App">
-      {/*
+      <div className="Nav1">
+        
+       
+      </div>
+      
+      
+     
+      
+        
+        {/*}
       <div className="NavBar">
         <ul className="Hole">
         <li>
@@ -35,7 +44,7 @@ function App() {
           </li>
         </ul>
       </div>
-      */}
+      {*/}
       <section className="Home">
         <div ref={homeRef} className="innerSection">
           <div className="introBox">
@@ -56,7 +65,7 @@ function App() {
         <div ref={projectsRef} className="innerSection">I' projects</div>
       </section>
       <section className="Clubs">
-        <div ref={clubRef} innerSection>I' CLubs</div>
+        <div ref={clubRef} className="innerSection">I' CLubs</div>
       </section>
       <footer></footer>
       

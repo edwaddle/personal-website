@@ -33,6 +33,7 @@ ul{
   top:0;
 
 }
+/*
 .Hole {
   background: rgba(255, 255, 255, 0.6);
   height: 100px;
@@ -42,6 +43,8 @@ ul{
   justify-content: space-between;
   align-items: center;
 }
+  */
+
 li{
   float:inline-start;
   padding: 0 24px;
@@ -132,3 +135,68 @@ footer{
   z-index: -1;
 
 }
+.Nav1{
+  position:absolute;
+  width: 1304px;
+  height: 138px;
+  margin:0 auto;
+  overflow:hidden;
+  z-index:1000;
+  left:calc(50% - 652px);
+  top:0px;
+  border-radius: 0 0 40px 40px;
+}
+.Nav1:after{
+  content:'';
+  position:absolute;
+  left: 71px;
+  top: 21px;
+  border-radius:40px;
+  width: 1168.73px;
+  height: 76.89px;
+  box-shadow: 0px 0px 0px 2000px #3A4967;
+}
+
+/* Subtract 
+.Nav1::after{
+
+  position: absolute;
+  width: 1282.25px;
+  height: 119.98px;
+  left: calc(50% - 1282.25px/2 + 2.6px);
+  top: -0.98px;
+
+  background: #3A414F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Rectangle 6 
+.Nav1{
+
+  position: absolute;
+  width: 1304px;
+  height: 138px;
+  left: 108px;
+  top: -19px;
+
+background: #3A4967;
+z-index:999;
+}
+
+
+/* Rectangle 10 
+.Nav2{
+  position: absolute;
+  width: 1168.73px;
+  height: 76.89px;
+  left: 171px;
+  top: 21px;
+
+  background: rgba(128, 128, 128, 0.55);
+  border-radius: 40px;
+  z-index:1000;
+
+}
+*/
+
