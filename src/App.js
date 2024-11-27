@@ -10,43 +10,41 @@ function App() {
   
   return (
     <div className="App">
-      <div className="Nav1">
+      <div className="NavContainer">
+        <div className="triangle-topright"></div>
+        <div className="Nav1">
+          <ul className="Hole">
+            <li>
+              <a href="#projects" onClick={() => {
+                  homeRef.current.scrollIntoView({ behavior: 'smooth' });
+                }}>Home</a>
+            </li>
+            <li>
+              <a href="#projects" onClick={() => {
+                aboutMeRef.current.scrollIntoView({ behavior: 'smooth' });
+              }}>About Me</a>
+            </li>
+            <li>
+              <a href="#projects" onClick={() => {
+                projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+              }}>Projects</a>
+            </li>
+            <li>
+              <a href="#projects" onClick={() => {
+                clubRef.current.scrollIntoView({ behavior: 'smooth' });
+              }}>Clubs</a>
+            </li>
+          </ul>
+          
         
-       
+          </div>
+          
+        <div className="triangle-topleft"></div>
       </div>
       
       
-     
-      
-        
-        {/*}
-      <div className="NavBar">
-        <ul className="Hole">
-        <li>
-            <a href="#projects" onClick={() => {
-              homeRef.current.scrollIntoView({ behavior: 'smooth' });
-            }}>Home</a>
-          </li>
-          <li>
-            <a href="#projects" onClick={() => {
-              aboutMeRef.current.scrollIntoView({ behavior: 'smooth' });
-            }}>About Me</a>
-          </li>
-          <li>
-            <a href="#projects" onClick={() => {
-              projectsRef.current.scrollIntoView({ behavior: 'smooth' });
-            }}>Projects</a>
-          </li>
-          <li>
-            <a href="#projects" onClick={() => {
-              clubRef.current.scrollIntoView({ behavior: 'smooth' });
-            }}>Clubs</a>
-          </li>
-        </ul>
-      </div>
-      {*/}
-      <section className="Home">
-        <div ref={homeRef} className="innerSection">
+      <section ref={homeRef} className="Home">
+        <div className="innerSection">
           <div className="introBox">
             <h1>Hey!<br/> I'm Edwin Yue</h1>
             <div className="getStartedBox">

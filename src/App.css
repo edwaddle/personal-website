@@ -8,6 +8,7 @@ h1{
 }
 .App {
   text-align: center;
+  overflow: hidden;
 }
 section{
   position: relative;
@@ -19,42 +20,83 @@ section{
 ul{
   padding:0px;
 }
-.NavBar{
-  position: sticky;
-  top: 0px;
-  overflow: hidden;
-  width: 80vw;
-  height: 140px;
-  z-index: 100;
-  translate: calc(50% - 30vw);
-  display: flex;
+.NavContainer{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  position: fixed;
+  z-index:1000;
+  height: 128px;
+  top:0px;
+}
+.Nav1{
+  position: absolute;
+  z-index:1000;
+  overflow:hidden;
+  width: 1280px;
+  height: 108px;
+  margin:0 auto;
+  top:0px;
+  border-radius: 0 0 40px 40px;
+  display:flex;
   justify-content: center;
   align-items: center;
-  top:0;
-
 }
-/*
+.Nav1:after{
+  position: absolute;
+  z-index:1000;
+  overflow:hidden;
+  content:'';
+  border-radius:40px;
+  width: 1168.73px;
+  height: 68px;
+  box-shadow: 0px 0px 0px 2000px #3A414F;
+}
+.triangle-topright{
+  position: absolute;
+  z-index:1000;
+  overflow:hidden;
+  top:0;
+  left:calc(50% + 640px + 0px - 1px);
+  width: 0;
+	height: 0;
+	border-right: 16px solid transparent;
+	border-top: calc(108px - 40px + 10px) solid #3A414F;
+}
+.triangle-topleft{
+  position: absolute;
+  z-index:1000;
+  overflow:hidden;
+  top:0;
+  left:calc(50% - 640px - 16px + 1px);
+  width: 0;
+	height: 0;
+	border-left: 16px solid transparent;
+	border-top: calc(108px - 40px + 10px) solid #3A414F;
+}
 .Hole {
+  position: relative;
   background: rgba(255, 255, 255, 0.6);
-  height: 100px;
-  width: 60vw;
-  border-radius: 32px;
+  width: 1168.73px;
+  height: 68px;
+  border-radius: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
-  */
 
 li{
-  float:inline-start;
   padding: 0 24px;
   font-size: 36px;
   list-style: none;
 }
 li a{
+  position: relative;
+  z-index: 1001;
   text-decoration: none;
   color:#1E1E1E;
   font-weight:500;
+  opacity: 55%;
 }
 .Home{
   background-color: #1E1E1E;
@@ -63,7 +105,6 @@ li a{
   background-position-x:right;
   background-repeat:no-repeat;
   background-size:contain;
-  margin-top:-140px;
   display: flex;
   justify-content: left;
 }
@@ -135,27 +176,8 @@ footer{
   z-index: -1;
 
 }
-.Nav1{
-  position:absolute;
-  width: 1304px;
-  height: 138px;
-  margin:0 auto;
-  overflow:hidden;
-  z-index:1000;
-  left:calc(50% - 652px);
-  top:0px;
-  border-radius: 0 0 40px 40px;
-}
-.Nav1:after{
-  content:'';
-  position:absolute;
-  left: 71px;
-  top: 21px;
-  border-radius:40px;
-  width: 1168.73px;
-  height: 76.89px;
-  box-shadow: 0px 0px 0px 2000px #3A4967;
-}
+
+
 
 /* Subtract 
 .Nav1::after{
