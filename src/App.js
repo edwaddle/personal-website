@@ -57,7 +57,29 @@ function App() {
         </div>
       </section>
       <section className="AboutMe">
-        <div ref={aboutMeRef} className="innerSection">I' me</div>
+        <div ref={aboutMeRef} className="innerSection">
+        <h1 >About Me</h1>
+        <div className="AboutMeSection">
+          <img className="pfp" src={require('./background-images/PfpInternship 1.png')} />
+          <div className="AboutMeTextField">
+            <h2>Hobbies</h2>
+            <p>I like Mac and Cheese <br/>
+            I like Penguins <br/>
+            I like Coding <br/>
+            YAYYYY
+            </p>
+            <h2>Interests</h2>
+            <p>I like Mac and Cheese <br/>
+            I like Penguins <br/>
+            I like Coding <br/>
+            YAYYYY
+            </p>
+          </div>
+          </div>
+          
+
+          
+        </div>
       </section>
       <section  className="Projects">
         <div ref={projectsRef} className="innerSection">I' projects</div>

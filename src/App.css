@@ -6,9 +6,22 @@ h1{
   font-size:70px;
   color: #D9D9D9;
 }
+h2{
+  margin: 0;
+  font-size: 40px;
+  color: #D9D9D9;
+  padding-bottom: 12px;
+}
+p{
+  margin: 0;
+  font-size: 32px;
+  color: #D9D9D9;
+  padding-bottom: 20px;
+}
 .App {
   text-align: center;
-  overflow: hidden;
+  overflow-x: hidden;
+  height:100vh;
 }
 section{
   position: relative;
@@ -101,6 +114,7 @@ li a{
 .Home{
   background-color: #1E1E1E;
   height: 100vh !important;
+  padding: 0 !important;
   background-image: url('background-images/Rectangle\ 3.png');
   background-position-x:right;
   background-repeat:no-repeat;
@@ -120,6 +134,7 @@ li a{
   justify-content: space-between;
   align-items:center;
 }
+
 .getStartedBox{
   height: 76px;
   width: 364px;
@@ -139,7 +154,11 @@ li a{
   font-weight: bold;
 }
 .innerSection{
-  padding-top: 40px;
+  padding-top: 138px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
 }
 .AboutMe{
   background-image: url('background-images/screen\ 2.png');
@@ -150,6 +169,24 @@ li a{
   position: relative;
   z-index: 2;
 }
+.AboutMeSection{
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+  height: 536px;
+  width: 1120px;
+}
+.pfp{
+  height: 508px;
+  text-align: left;
+}
+.AboutMeTextField{
+  height: 508px;
+  margin-top: 48px;
+  text-align: left;
+}
+
 .Projects{
   background-image: url('background-images/screen\ 3.png');
   background-repeat:no-repeat;
