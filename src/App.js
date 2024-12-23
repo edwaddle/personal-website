@@ -58,23 +58,23 @@ function App() {
       </section>
       <section className="AboutMe">
         <div ref={aboutMeRef} className="innerSection">
-        <h1 >About Me</h1>
-        <div className="AboutMeSection">
-          <img className="pfp" src={require('./background-images/PfpInternship 1.png')} />
-          <div className="AboutMeTextField">
-            <h2>Hobbies</h2>
-            <p>I like Mac and Cheese <br/>
-            I like Penguins <br/>
-            I like Coding <br/>
-            YAYYYY
-            </p>
-            <h2>Interests</h2>
-            <p>I like Mac and Cheese <br/>
-            I like Penguins <br/>
-            I like Coding <br/>
-            YAYYYY
-            </p>
-          </div>
+          <h1 >About Me</h1>
+          <div className="AboutMeSection">
+            <img className="pfp" src={require('./background-images/PfpInternship 1.png')} />
+            <div className="AboutMeTextField">
+              <h2>Hobbies</h2>
+              <p>I like Mac and Cheese <br/>
+              I like Penguins <br/>
+              I like Coding <br/>
+              YAYYYY
+              </p>
+              <h2>Interests</h2>
+              <p>I like Mac and Cheese <br/>
+              I like Penguins <br/>
+              I like Coding <br/>
+              YAYYYY
+              </p>
+            </div>
           </div>
           
 
@@ -82,10 +82,42 @@ function App() {
         </div>
       </section>
       <section  className="Projects">
-        <div ref={projectsRef} className="innerSection">I' projects</div>
+        <div ref={projectsRef} className="innerSection">
+          <h1>I' Projects</h1>
+          
+        </div>
       </section>
       <section className="Clubs">
-        <div ref={clubRef} className="innerSection">I' CLubs</div>
+        <div ref={clubRef} className="innerSection">
+          <h1 style={{color: '#1E1E1E'}}>I' CLubs</h1>
+          <div className="club-panels-container">
+              <div className="club-panel" >
+                <img className="club-image"></img>
+                <div className="club-panel-text">
+                  <h2 style={{color: '#1E1E1E'}}>Club Name</h2>
+                  <p style={{color: '#1E1E1E'}}>nblah blah blah</p>
+                </div>
+              </div>     
+
+              <div className="club-panel" >
+                <img className="club-image"></img>
+                <div className="club-panel-text">
+                  <h2 style={{color: '#1E1E1E'}}>Club Name</h2>
+                  <p style={{color: '#1E1E1E'}}>nblah blah blah</p>
+                </div>
+              </div>  
+
+              <div className="club-panel" >
+                <img className="club-image"></img>
+                <div className="club-panel-text">
+                  <h2 style={{color: '#1E1E1E'}}>Club Name</h2>
+                  <p style={{color: '#1E1E1E'}}>nblah blah blah</p>
+                </div>
+              </div>  
+          </div>
+          
+        </div>
+        
       </section>
       <footer></footer>
       
