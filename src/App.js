@@ -1,12 +1,45 @@
 import "./App.css";
 import { useRef } from "react";
 import Project from "./Project.js";
+import ProjectCard from "./ProjectCard.js";
 
 function App() {
   const homeRef = useRef();
   const aboutMeRef = useRef();
   const projectsRef = useRef();
   const clubRef = useRef();
+
+  /*project list */
+  function project(name, desc, image) {
+    this.name = name;
+    this.desc = String(desc);
+    this.image = image;
+    this.getSummary = function () {
+      return `${this.name} by ${this.desc}, published in ${this.image}.`;
+    };
+  }
+
+  const proj1 = new project(
+    "The Hobbit",
+    "J.R.R. Tolkien",
+    "./background-images/penguin.png"
+  );
+  const proj2 = new project(
+    "proj2",
+    "J.R.R. Tolkien",
+    "./background-images/penguin.png"
+  );
+  const proj3 = new project(
+    "prj3",
+    "J.R.R. Tolkien",
+    "./background-images/penguin.png"
+  );
+  const proj4 = new project(
+    "proj4",
+    "J.R.R. Tolkien",
+    "./background-images/penguin.png"
+  );
+  let projectDict = [proj1, proj2, proj3, proj4, proj4, proj4];
 
   return (
     <div className="App">
@@ -111,7 +144,7 @@ function App() {
       <section className="Projects">
         <div ref={projectsRef} className="innerSection">
           <h1>I' Projects</h1>
-          <Project />
+          <ProjectCard projectDict={projectDict} />
         </div>
       </section>
       <section className="Clubs">
