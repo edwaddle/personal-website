@@ -2,6 +2,7 @@ import "./App.css";
 import { useRef } from "react";
 import Project from "./Project.js";
 import ProjectCard from "./ProjectCard.js";
+import Club from "./Club.js";
 
 function App() {
   const homeRef = useRef();
@@ -21,7 +22,7 @@ function App() {
 
   const proj1 = new project(
     "The Hobbit",
-    "J.R.R. Tolkien",
+    "J.R.R. Tolkien ADDING A LONG AHH DESCRIPTION TO CTEST WHAT HAPPENS IF U DO IT HEHEHEH. honk honk hit the klaxon!",
     "./background-images/penguin.png"
   );
   const proj2 = new project(
@@ -40,6 +41,28 @@ function App() {
     "./background-images/penguin.png"
   );
   let projectDict = [proj1, proj2, proj3, proj4, proj4, proj4];
+
+  function club(title, role, desc, color, size, image) {
+    this.title = title;
+    this.role = role;
+    this.desc = String(desc); //remember to manually warp the text with \n
+    this.color = color;
+    this.size = size;
+    this.image = image;
+    this.getSummary = function () {
+      return `${this.title} by ${this.desc}, published in ${this.image}.`;
+    };
+  }
+
+  const RCC = new club(
+    "RCC",
+    "Workshop Lead",
+    "makin workshops\nmakin workshops\nhi",
+    "#DE517C",
+    32,
+    "./club-images/RCC.png"
+  );
+  let clubDict = [RCC, RCC, RCC, RCC];
 
   return (
     <div className="App">
@@ -149,32 +172,7 @@ function App() {
       </section>
       <section className="Clubs">
         <div ref={clubRef} className="innerSection">
-          <h1 style={{ color: "#1E1E1E" }}>I' CLubs</h1>
-          <div className="club-panels-container">
-            <div className="club-panel">
-              <img className="club-image"></img>
-              <div className="club-panel-text">
-                <h2 style={{ color: "#1E1E1E" }}>Club Name</h2>
-                <p style={{ color: "#1E1E1E" }}>nblah blah blah</p>
-              </div>
-            </div>
-
-            <div className="club-panel">
-              <img className="club-image"></img>
-              <div className="club-panel-text">
-                <h2 style={{ color: "#1E1E1E" }}>Club Name</h2>
-                <p style={{ color: "#1E1E1E" }}>nblah blah blah</p>
-              </div>
-            </div>
-
-            <div className="club-panel">
-              <img className="club-image"></img>
-              <div className="club-panel-text">
-                <h2 style={{ color: "#1E1E1E" }}>Club Name</h2>
-                <p style={{ color: "#1E1E1E" }}>nblah blah blah</p>
-              </div>
-            </div>
-          </div>
+          <Club clubDict={clubDict} />
         </div>
       </section>
       <footer></footer>

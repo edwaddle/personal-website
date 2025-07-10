@@ -203,7 +203,8 @@ li a {
   margin-top: -11vh;
   position: relative;
   z-index: 1;
-  height: 115vh !important;
+  height: fit-content !important;
+  padding-bottom: 15vh;
 }
 
 .Clubs {
@@ -220,6 +221,7 @@ li a {
   width: 80vw;
   padding: 0 10vw;
 }
+/*
 .club-panel {
   background-color: #3a414f;
   height: calc(75vh);
@@ -251,6 +253,8 @@ li a {
   max-width: 280px;
   border-radius: 20px;
 }
+  potentially delete this
+  */
 footer {
   position: relative;
   background-color: #ffffff;

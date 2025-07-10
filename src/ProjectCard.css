@@ -1,5 +1,6 @@
 h2 {
   color: #f4b678;
+  text-align: center;
 }
 h3 {
   color: #d9d9d9;
@@ -30,12 +31,12 @@ h3 {
 
 @media (min-width: 1324px) {
   .projectCard:nth-child(2) {
-    border-left: 1px black solid;
-    border-right: 1px black solid;
+    border-left: 1px #6d7481 solid;
+    border-right: 1px #6d7481 solid;
   }
 }
 .projectCard:nth-child(2) {
-  border-left: 1px black solid;
+  border-left: 1px #6d7481 solid;
 }
 
 @media (max-width: 875px) {
