@@ -1,12 +1,38 @@
-.clubPenguinText {
-  /*
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  */
-  color: black !important;
+.clubCardWrapper {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  position: relative;
 }
 
-img {
+.clubButton {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  height: 3em;
+  width: 60%;
+  box-shadow: grey 1px 4px 3px;
+}
+
+.clubButton:active {
+  filter: brightness(0.9);
+}
+
+.clubCardWrapper:hover .clubCard {
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+}
+
+.clubCardWrapper:hover .clubButton {
+  opacity: 1;
+  transition: linear;
+  transition: opacity 0.3s ease-out;
 }

@@ -18,7 +18,6 @@ const ProjectCard = (props) => {
   );
   return (
     <>
-      hi?
       {res.map((element) => {
         return (
           <div className="projectGrid" key={element.index}>
