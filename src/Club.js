@@ -3,14 +3,13 @@ import "./Club.css";
 
 const Club = (props) => {
   return (
-    <div>
+    <div className="allCards">
       {props.clubDict.map((element, clubIndex) => {
         return (
           <div className="clubCardWrapper">
             <svg
               className="clubCard"
               xmlns="http://www.w3.org/2000/svg"
-              width="25vw" // Responsive width
               height="auto" // Maintain aspect ratio
               viewBox="0 0 356 452" // Defines internal coordinate system
               fill="none"
